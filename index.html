@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/stylesheet.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <span>Rock</span>
+        <span>Paper</span>
+        <span>Scissors</span>
+      </h1>
+
+      <div class="score-container">
+        <h4>Score</h4>
+        <p id="score">0</p>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Paper -->
+      <button class="btn-circle btn-paper pick" data-choice="paper">
+        <div class="circle circle-paper">
+          <span class="wrapper">
+            <img src="/images/icon-paper.svg" alt="Paper">
+          </span>
+        </div>
+      </button>
+
+      <!-- Scissors -->
+      <button class="btn-circle btn-scissors pick" data-choice="scissors">
+        <span class="wrapper">
+          <img src="/images/icon-scissors.svg" alt="Scissors">
+        </span>
+      </button>
+
+      <!-- Rock -->
+      <button class="btn-circle btn-rock pick" data-choice="rock">
+        <span class="wrapper">
+          <img src="/images/icon-rock.svg" alt="Rock">
+        </span>
+      </button>
+    </main>
+
+    <!-- Rules -->
+    <div id="modal" class="rules-modal">
+      <img src="/images/image-rules.svg" alt="Rules">
+      <button id="close">
+        <img src="/images/icon-close.svg" alt="Close">
+      </button>
+    </div>
+    <button id="open" class="btn-rules">Rules</button>
+  </div>
+
+  <div id="selection" class="selection">
+    <div>
+      <h2>You Picked</h2>
+      <button id="user_select" class="btn-circle">
+        <span class="wrapper">
+          <img src="/images/icon-paper.svg" alt="Paper">
+        </span>
+      </button>
+    </div>
+
+    <div class="mobile">
+      <p class="big-text">
+        <span id="winner"></span>
+      </p>
+      <button id="reset" class="btn">Play Again</button>
+    </div>
+
+    <div>
+      <h2>The House Picked</h2>
+      <button id="house_select" class="btn-circle">
+        <span class="wrapper">
+          <img src="/images/icon-rock.svg" alt="Rock">
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
